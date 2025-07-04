@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>TomDownload - Área de Uploads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+      color: white;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      width: 100%;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff00ff;
+      color: white;
+    }
+
+    #fileList {
+      max-width: 600px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    #fileList ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #fileList li {
+      margin-bottom: 10px;
+    }
+
+    #fileList a {
+      color: #00ffff;
+      text-decoration: none;
+      background: rgba(255,255,255,0.1);
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    #fileList a:hover {
+      background-color: #ff00ff;
+      color: white;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Área de Uploads - TomDownload</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" />
+    <button type="submit">Enviar Arquivo</button>
+  </form>
+
+  <div id="fileList">
+    <h2>Arquivos Publicados por Usuários</h2>
+    <ul id="repoFiles">
+      <li>Carregando arquivos...</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Tom Gamer | Projeto mantido por ThomasDevSite
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
