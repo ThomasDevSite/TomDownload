@@ -40,7 +40,7 @@ async function carregarArquivos() {
   const ul = document.getElementById('repoFiles');
   ul.innerHTML = '<li>Carregando arquivos...</li>';
   try {
-    const res = await fetch('https://api.github.com/repos/ThomasDevSite/ThomasDevSite.github.io/contents/TomDownload');
+    const res = await fetch('https://api.github.com/repos/ThomasDevSite/TomDownload/Downloads');
     const files = await res.json();
     ul.innerHTML = '';
     if (Array.isArray(files) && files.length > 0) {
